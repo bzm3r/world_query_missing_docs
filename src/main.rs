@@ -11,7 +11,7 @@ pub struct DummyComponent;
 #[derive(WorldQuery)]
 pub struct DummyQuery {
     /// Gotta query 'em all!
-    dummy: DummyComponent,
+    dummy: &'static DummyComponent,
 }
 
 fn main() {
